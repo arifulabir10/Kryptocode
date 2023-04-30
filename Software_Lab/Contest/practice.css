@@ -1,0 +1,297 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: powderblue;
+
+}
+
+
+.devider
+{
+    position: absolute;
+    width: 0.5px;
+    height: 50%;
+    border: 1px solid #000;
+    top: 30%;
+    left: 40%;
+
+
+}
+
+.moto{
+    height: 15%;
+    width: 30%;
+    padding: 10px;
+    position: absolute;
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 00px 15px black;
+    top: 30%;
+    left: 5%;
+    
+}
+
+
+.menubar
+{
+    background-color: transparent;
+
+    text-align: center;
+
+    
+}
+
+.menubar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color:rgb(255, 255, 255);
+}
+
+.menubar ul li
+{
+    font-size: 25px;
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.menubar ul li a
+{
+    text-decoration: none;
+    font-weight: bold;
+
+    color: rgb(0, 0, 0);
+}
+
+.menubar ul li a:hover
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(3, 161, 153);
+    text-shadow:  2px 2px 5px rgb(247, 243, 243);
+}
+
+
+
+.active
+{
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: .3s;
+
+    
+    
+}
+
+.menubar ul li:hover
+{
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: .3s;
+    text-decoration: underline;
+    
+    
+}
+
+.menubar .fa
+{
+    margin-right: 5px;
+    color: black;
+}
+
+.sub-menu-1
+{
+    display: none;
+}
+
+.menubar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background-color:rgb(255, 255, 255);
+    margin-top: 15px;
+    z-index: 1;
+}
+
+.menubar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 5px;
+    
+}
+
+.menubar ul li:hover .sub-menu-1 ul li
+{
+    width: 250px;
+    padding: 10px;
+    border-bottom: 1px solid whitesmoke;
+    background: transparent;
+    border-radius: 0px;
+    text-align: left;
+}
+
+.menubar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+
+.menubar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: rgb(3, 161, 153);
+    text-shadow:  2px 2px 5px rgb(247, 243, 243);
+    text-decoration: underline;
+    
+
+}
+
+.fa-angle-right
+{
+    float: right;
+}
+
+
+.sub-menu-2
+{
+    display: none;
+}
+
+.hover-me:hover .sub-menu-2
+{
+    display: block;
+    position: absolute;
+    background-color:rgb(255, 255, 255);
+    margin-top: -50px;
+    margin-left: 230px;
+}
+
+
+
+
+.sub-menu-3
+{
+    display: none;
+}
+
+.hover-me-3:hover .sub-menu-3
+{
+    display: block;
+    position: absolute;
+    background-color:rgb(49,49,49);
+    margin-top: -50px;
+    margin-left: 230px;
+}
+
+
+
+
+.practice_title{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+.practice_cards
+{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    display: inline-block;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow:3px 3px 15px grey;
+    margin: 40px;
+    
+
+}
+
+.practice_cards:hover
+{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    display: inline-block;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin: 40px;
+    box-shadow:10px 5px 15px;
+    transition: .5s;
+}
+
+.image img
+{
+    width: 100%;
+}
+
+.title
+{
+    height: 60px;
+    width: 250px;
+    background-color: rgb(38, 67, 84);
+    text-align: center;
+    padding-top: 5px;
+    color: 	white;
+    text-shadow: 0px 00px 20px black;
+    padding-bottom: 5px;
+    font-size: 24px;
+    font-weight: bolder;
+    border-radius: 10px;
+    
+}
+
+
+
+
+.description
+{
+    position: absolute;
+    height: 200px;
+    width: 220px;
+    padding: 10px;
+    text-align: center;
+    font-size: 28px;
+    font-family: century;
+    text-align: center;
+    color: rgb(101, 123, 88);
+    text-shadow: 0px 00px 20px white;
+}
+
+button {
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    top: 240px;
+    left: 25px;
+    font-weight: bold;
+    background-color: rgb(255, 228, 181);
+    border: 2px solid rgb(89, 148, 89);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+
+
+
+button:hover
+{
+    position: absolute;
+    background-color:black ;
+    color: rgb(255, 228, 181);
+    font-size: 15px;
+    box-shadow: 5px 10px;
+    border: 1px solid black;
+    transition: 0.5s;
+}
